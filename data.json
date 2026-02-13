@@ -1,0 +1,971 @@
+[
+  {"name":"#0",
+    "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+    "image": "sq0.png",
+    "animation_url":"0.glb",
+    "attributes": [
+        {
+          "trait_type": "FLOOR",
+          "value": "-"
+        },
+        {
+          "trait_type": "AREA",
+          "value": "-"
+        },
+        {
+          "trait_type": "POINT",
+          "value": "10"
+        }
+      ]
+    },
+  {"name":"#1",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq1.png",
+  "animation_url":"1.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "ART LOUNGE"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "90"
+      }
+    ]
+  },
+  {"name":"#2",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq2.png",
+  "animation_url":"2.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "B1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "OTHER"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "90"
+      }
+    ]
+  },
+  {"name":"#3",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq3.png",
+  "animation_url":"3.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "B1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "PRIVATE POOL"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#4",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq4.png",
+  "animation_url":"4.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "INFINITY POOL"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "70"
+      }
+    ]
+  },
+  {"name":"#5",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq5.png",
+  "animation_url":"5.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "GALLERY"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "80"
+      }
+    ]
+  },
+  {"name":"#6",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq6.png",
+  "animation_url":"6.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "5F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "ROOM"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#7",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq7.png",
+  "animation_url":"7.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "LOUNGE"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "80"
+      }
+    ]
+  },
+  {"name":"#8",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq8.png",
+  "animation_url":"8.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "GALLERY"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "50"
+      }
+    ]
+  },
+  {"name":"#9",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq9.png",
+  "animation_url":"9.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "B1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "DINNING"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "90"
+      }
+    ]
+  },
+  {"name":"#10",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq10.png",
+  "animation_url":"10.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "INFINITY POOL"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "30"
+      }
+    ]
+  },
+  {"name":"#11",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq11.png",
+  "animation_url":"11.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "FRONT"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "50"
+      }
+    ]
+  },
+  {"name":"#12",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq12.png",
+  "animation_url":"12.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "B1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "OTHER"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "60"
+      }
+    ]
+  },
+  {"name":"#13",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq13.png",
+  "animation_url":"13.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "OTHER"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#14",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq14.png",
+  "animation_url":"14.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "ART LOUNGE"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "40"
+      }
+    ]
+  },
+  {"name":"#15",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq15.png",
+  "animation_url":"15.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "INFINITY POOL"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "20"
+      }
+    ]
+  },
+  {"name":"#16",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq16.png",
+  "animation_url":"16.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "OUTSIDE"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "-"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "90"
+      }
+    ]
+  },
+  {"name":"#17",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq17.png",
+  "animation_url":"17.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "B1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "DINNING"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "80"
+      }
+    ]
+  },
+  {"name":"#18",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq18.png",
+  "animation_url":"18.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "B1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "OTHER"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "60"
+      }
+    ]
+  },
+  {"name":"#19",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq19.png",
+  "animation_url":"19.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "5F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "ROOM"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#20",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq20.png",
+  "animation_url":"20.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "B1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "DINNING"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "80"
+      }
+    ]
+  },
+  {"name":"#21",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq21.png",
+  "animation_url":"21.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "B1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "DINNING"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "70"
+      }
+    ]
+  },
+  {"name":"#22",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq22.png",
+  "animation_url":"22.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "INFINITY POOL"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "80"
+      }
+    ]
+  },
+  {"name":"#23",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq23.png",
+  "animation_url":"23.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "B1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "OTHER"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "90"
+      }
+    ]
+  },
+  {"name":"#24",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq24.png",
+  "animation_url":"24.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "OTHER"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#25",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq25.png",
+  "animation_url":"25.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "B1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "DINNING"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "80"
+      }
+    ]
+  },
+  {"name":"#26",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq26.png",
+  "animation_url":"26.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "B1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "OTHER"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "70"
+      }
+    ]
+  },
+  {"name":"#27",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq27.png",
+  "animation_url":"27.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "GALLERY"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "60"
+      }
+    ]
+  },
+  {"name":"#28",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq28.png",
+  "animation_url":"28.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "ART LOUNGE"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "50"
+      }
+    ]
+  },
+  {"name":"#29",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq29.png",
+  "animation_url":"29.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "OTHER"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "90"
+      }
+    ]
+  },
+  {"name":"#30",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq30.png",
+  "animation_url":"30.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "OUTSIDE"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "-"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#31",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq31.png",
+  "animation_url":"31.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "OUTSIDE"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "-"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#32",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq32.png",
+  "animation_url":"32.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "OUTSIDE"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "-"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#33",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq33.png",
+  "animation_url":"33.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "OUTSIDE"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "-"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#34",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq34.png",
+  "animation_url":"34.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "OTHER"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#35",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq35.png",
+  "animation_url":"35.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "OTHER"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#36",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq36.png",
+  "animation_url":"36.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "OTHER"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#37",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq37.png",
+  "animation_url":"37.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "XF"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "ROOM"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#38",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq38.png",
+  "animation_url":"38.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "GALLERY"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "10"
+      }
+    ]
+  },
+  {"name":"#39",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq39.png",
+  "animation_url":"39.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "LOUNGE"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "50"
+      }
+    ]
+  },
+  {"name":"#40",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq40.png",
+  "animation_url":"40.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "5F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "ROOM"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#41",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq41.png",
+  "animation_url":"41.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "INFINITY POOL"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "50"
+      }
+    ]
+  },
+  {"name":"#42",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq42.png",
+  "animation_url":"42.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "5F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "ROOM"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },
+  {"name":"#43",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq43.png",
+  "animation_url":"43.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "ART LOUNGE"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "70"
+      }
+    ]
+  },
+  {"name":"#44",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq44.png",
+  "animation_url":"44.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "B1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "DINNING"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "60"
+      }
+    ]
+  },
+  {"name":"#45",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq45.png",
+  "animation_url":"45.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "INFINITY POOL"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "70"
+      }
+    ]
+  },
+  {"name":"#46",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq46.png",
+  "animation_url":"46.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "GALLERY"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "10"
+      }
+    ]
+  },
+  {"name":"#47",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq47.png",
+  "animation_url":"47.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "INFINITY POOL"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "90"
+      }
+    ]
+  },
+  {"name":"#48",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq48.png",
+  "animation_url":"48.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "ART LOUNGE"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "50"
+      }
+    ]
+  },
+  {"name":"#49",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq49.png",
+  "animation_url":"49.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "2F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "INFINITY POOL"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "100"
+      }
+    ]
+  },  
+  {"name":"#50",
+  "description":"AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events.\n OFFICIAL WEBSITE : [https://aonagi1st.studio.site](https://aonagi1st.studio.site)",
+  "image": "sq50.png",
+  "animation_url":"50.glb",
+  "attributes": [
+      {
+        "trait_type": "FLOOR",
+        "value": "1F"
+      },
+      {
+        "trait_type": "AREA",
+        "value": "LOUNGE"
+      },
+      {
+        "trait_type": "POINT",
+        "value": "50"
+      }
+    ]
+  }
+  ]

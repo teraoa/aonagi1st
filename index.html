@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AONAGI 1st</title>
+  <meta name="description" content="瀬戸内リトリート青凪が提案する新しい旅のかたち">
+  <meta property="og:title" content="AONAGI 1st">
+  <meta property="og:description" content="瀬戸内リトリート青凪が提案する新しい旅のかたち">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.3.0/model-viewer.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #fafafa;
+      color: #1a1a1a;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    /* Header */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: #fafafa;
+      z-index: 100;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1a1a1a;
+      font-size: 13px;
+      letter-spacing: 1px;
+      transition: opacity 0.3s;
+    }
+
+    nav a:hover {
+      opacity: 0.5;
+    }
+
+    /* Menu Toggle */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #1a1a1a;
+      margin: 5px 0;
+      transition: 0.3s;
+    }
+
+    /* Main Content */
+    main {
+      padding-top: 80px;
+    }
+
+    /* Filter Section */
+    .filter-section {
+      padding: 30px 40px;
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 61px;
+      z-index: 50;
+    }
+
+    .filter-group {
+      margin-bottom: 15px;
+    }
+
+    .filter-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .filter-label {
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #888;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .filter-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .filter-tag {
+      padding: 8px 16px;
+      border: 1px solid #ddd;
+      background: #fff;
+      font-size: 12px;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    .filter-tag:hover {
+      border-color: #1a1a1a;
+    }
+
+    .filter-tag.active {
+      background: #1a1a1a;
+      color: #fff;
+      border-color: #1a1a1a;
+    }
+
+    /* Gallery Grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2px;
+      padding: 2px;
+    }
+
+    .gallery-item {
+      aspect-ratio: 1;
+      background: #f0f0f0;
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      transition: opacity 0.3s;
+    }
+
+    .gallery-item.hidden {
+      display: none;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+    }
+
+    .gallery-item-info {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 20px;
+      background: linear-gradient(transparent, rgba(0,0,0,0.7));
+      color: #fff;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .gallery-item:hover .gallery-item-info {
+      opacity: 1;
+    }
+
+    .gallery-item-name {
+      font-size: 24px;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .gallery-item-tags {
+      font-size: 11px;
+      letter-spacing: 1px;
+      opacity: 0.8;
+    }
+
+    /* Modal */
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(250, 250, 250, 0.98);
+      z-index: 200;
+      overflow-y: auto;
+    }
+
+    .modal.active {
+      display: block;
+    }
+
+    .modal-close {
+      position: fixed;
+      top: 20px;
+      right: 40px;
+      background: none;
+      border: none;
+      font-size: 32px;
+      cursor: pointer;
+      z-index: 210;
+      color: #1a1a1a;
+      font-weight: 300;
+    }
+
+    .modal-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 80px 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .model-viewer-container {
+      aspect-ratio: 1;
+      background: #f0f0f0;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    model-viewer {
+      width: 100%;
+      height: 100%;
+    }
+
+    .modal-info {
+      padding-top: 40px;
+    }
+
+    .modal-name {
+      font-size: 48px;
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    .modal-attributes {
+      margin-bottom: 30px;
+    }
+
+    .modal-attribute {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .modal-attribute-label {
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: #888;
+    }
+
+    .modal-attribute-value {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .modal-description {
+      font-size: 14px;
+      line-height: 1.8;
+      color: #666;
+    }
+
+    /* Footer */
+    footer {
+      padding: 60px 40px;
+      text-align: center;
+      border-top: 1px solid #eee;
+      margin-top: 60px;
+    }
+
+    footer p {
+      font-size: 12px;
+      color: #888;
+      letter-spacing: 1px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      header {
+        padding: 15px 20px;
+      }
+
+      nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #fafafa;
+        flex-direction: column;
+        padding: 20px;
+        border-bottom: 1px solid #eee;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .filter-section {
+        padding: 20px;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .modal-content {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        gap: 30px;
+      }
+
+      .modal-name {
+        font-size: 32px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">AONAGI 1st</div>
+    <button class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="nav">
+      <a href="#gallery">GALLERY</a>
+      <a href="https://setouchi-aonagi.com/" target="_blank">OFFICIAL SITE</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="filter-section">
+      <div class="filter-group">
+        <span class="filter-label">FLOOR</span>
+        <div class="filter-tags" id="floor-filters"></div>
+      </div>
+      <div class="filter-group">
+        <span class="filter-label">AREA</span>
+        <div class="filter-tags" id="area-filters"></div>
+      </div>
+    </section>
+
+    <section class="gallery" id="gallery"></section>
+  </main>
+
+  <div class="modal" id="modal">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <div class="modal-content">
+      <div class="model-viewer-container">
+        <model-viewer
+          id="model-viewer"
+          camera-controls
+          auto-rotate
+          shadow-intensity="1"
+          exposure="0.8"
+          environment-image="neutral"
+        ></model-viewer>
+      </div>
+      <div class="modal-info">
+        <h2 class="modal-name" id="modal-name"></h2>
+        <div class="modal-attributes" id="modal-attributes"></div>
+        <p class="modal-description" id="modal-description"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2024 AONAGI 1st. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Data will be loaded from data.js
+    let artworks = [];
+    
+    // Initialize
+    async function init() {
+      try {
+        const response = await fetch('data.json');
+        artworks = await response.json();
+        renderFilters();
+        renderGallery();
+      } catch (error) {
+        console.error('Error loading data:', error);
+      }
+    }
+
+    // Extract unique values for filters
+    function getUniqueValues(traitType) {
+      const values = new Set();
+      artworks.forEach(item => {
+        const attr = item.attributes.find(a => a.trait_type === traitType);
+        if (attr && attr.value !== '-') {
+          values.add(attr.value);
+        }
+      });
+      return Array.from(values).sort();
+    }
+
+    // Render filter tags
+    function renderFilters() {
+      const floors = getUniqueValues('FLOOR');
+      const areas = getUniqueValues('AREA');
+
+      const floorContainer = document.getElementById('floor-filters');
+      floorContainer.innerHTML = `<button class="filter-tag active" data-filter="floor" data-value="all">ALL</button>`;
+      floors.forEach(floor => {
+        floorContainer.innerHTML += `<button class="filter-tag" data-filter="floor" data-value="${floor}">${floor}</button>`;
+      });
+
+      const areaContainer = document.getElementById('area-filters');
+      areaContainer.innerHTML = `<button class="filter-tag active" data-filter="area" data-value="all">ALL</button>`;
+      areas.forEach(area => {
+        areaContainer.innerHTML += `<button class="filter-tag" data-filter="area" data-value="${area}">${area}</button>`;
+      });
+
+      // Add click events
+      document.querySelectorAll('.filter-tag').forEach(tag => {
+        tag.addEventListener('click', handleFilterClick);
+      });
+    }
+
+    // Current filters
+    let currentFilters = {
+      floor: 'all',
+      area: 'all'
+    };
+
+    // Handle filter click
+    function handleFilterClick(e) {
+      const filterType = e.target.dataset.filter;
+      const value = e.target.dataset.value;
+
+      currentFilters[filterType] = value;
+
+      // Update active states
+      document.querySelectorAll(`[data-filter="${filterType}"]`).forEach(tag => {
+        tag.classList.remove('active');
+      });
+      e.target.classList.add('active');
+
+      filterGallery();
+    }
+
+    // Filter gallery items
+    function filterGallery() {
+      document.querySelectorAll('.gallery-item').forEach(item => {
+        const floor = item.dataset.floor;
+        const area = item.dataset.area;
+
+        const floorMatch = currentFilters.floor === 'all' || floor === currentFilters.floor;
+        const areaMatch = currentFilters.area === 'all' || area === currentFilters.area;
+
+        if (floorMatch && areaMatch) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    }
+
+    // Render gallery
+    function renderGallery() {
+      const gallery = document.getElementById('gallery');
+      gallery.innerHTML = '';
+
+      artworks.forEach((item, index) => {
+        const floor = item.attributes.find(a => a.trait_type === 'FLOOR')?.value || '-';
+        const area = item.attributes.find(a => a.trait_type === 'AREA')?.value || '-';
+
+        const div = document.createElement('div');
+        div.className = 'gallery-item';
+        div.dataset.index = index;
+        div.dataset.floor = floor;
+        div.dataset.area = area;
+        div.onclick = () => openModal(index);
+
+        div.innerHTML = `
+          <img src="images/${item.image}" alt="${item.name}" loading="lazy">
+          <div class="gallery-item-info">
+            <div class="gallery-item-name">${item.name}</div>
+            <div class="gallery-item-tags">${floor} / ${area}</div>
+          </div>
+        `;
+
+        gallery.appendChild(div);
+      });
+    }
+
+    // Open modal
+    function openModal(index) {
+      const item = artworks[index];
+      const floor = item.attributes.find(a => a.trait_type === 'FLOOR')?.value || '-';
+      const area = item.attributes.find(a => a.trait_type === 'AREA')?.value || '-';
+      const point = item.attributes.find(a => a.trait_type === 'POINT')?.value || '-';
+
+      document.getElementById('modal-name').textContent = item.name;
+      
+      document.getElementById('modal-attributes').innerHTML = `
+        <div class="modal-attribute">
+          <span class="modal-attribute-label">FLOOR</span>
+          <span class="modal-attribute-value">${floor}</span>
+        </div>
+        <div class="modal-attribute">
+          <span class="modal-attribute-label">AREA</span>
+          <span class="modal-attribute-value">${area}</span>
+        </div>
+        <div class="modal-attribute">
+          <span class="modal-attribute-label">POINT</span>
+          <span class="modal-attribute-value">${point}</span>
+        </div>
+      `;
+
+      // Clean description (remove markdown links)
+      const desc = item.description.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\\n/g, '<br>');
+      document.getElementById('modal-description').innerHTML = desc;
+
+      // Set 3D model
+      const modelViewer = document.getElementById('model-viewer');
+      modelViewer.src = `models/${item.animation_url}`;
+
+      document.getElementById('modal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    // Close modal
+    function closeModal() {
+      document.getElementById('modal').classList.remove('active');
+      document.body.style.overflow = '';
+      
+      // Stop model viewer
+      const modelViewer = document.getElementById('model-viewer');
+      modelViewer.src = '';
+    }
+
+    // Toggle mobile menu
+    function toggleMenu() {
+      document.getElementById('nav').classList.toggle('active');
+    }
+
+    // Close modal on escape
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    // Initialize on load
+    init();
+  </script>
+</body>
+</html>
