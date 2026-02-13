@@ -45,7 +45,6 @@
       cursor: pointer; 
       transition: all 0.3s; 
       font-family: inherit;
-      border-radius: 0;
     }
     .filter-tag:hover { border-color: #999; color: #000; }
     .filter-tag.active { background: #000; color: #fff; border-color: #000; }
@@ -53,7 +52,7 @@
     .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 3px; background: #f5f5f5; }
     .gallery-item { aspect-ratio: 1; background: #f0f0f0; cursor: pointer; overflow: hidden; position: relative; }
     .gallery-item.hidden { display: none; }
-    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s, opacity 0.3s; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s; }
     .gallery-item:hover img { transform: scale(1.03); }
     .gallery-item-overlay { 
       position: absolute; bottom: 0; left: 0; right: 0; 
@@ -66,24 +65,27 @@
     .gallery-item-name { font-size: 16px; font-weight: 400; color: #000; }
     .gallery-item-meta { font-size: 10px; color: #999; margin-top: 5px; letter-spacing: 1px; }
 
-    /* Modal */
+    /* Modal - 3 Column Layout */
     .modal { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(255,255,255,0.98); z-index: 200; overflow-y: auto; }
     .modal.active { display: block; }
     .modal-close { position: fixed; top: 25px; right: 40px; background: none; border: none; font-size: 24px; cursor: pointer; color: #000; opacity: 0.4; z-index: 210; }
     .modal-close:hover { opacity: 1; }
-    .modal-content { max-width: 1200px; margin: 0 auto; padding: 80px 40px; }
+    .modal-content { max-width: 1400px; margin: 0 auto; padding: 80px 40px; }
     .modal-header { margin-bottom: 40px; }
     .modal-name { font-size: 32px; font-weight: 400; letter-spacing: 2px; }
     .modal-attrs { display: flex; gap: 30px; margin-top: 15px; }
     .modal-attr { font-size: 12px; color: #999; }
     .modal-attr span { color: #000; margin-left: 8px; }
-    .modal-viewers { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+    
+    .modal-viewers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
     .viewer-box { background: #f5f5f5; overflow: hidden; }
-    .viewer-label { font-size: 10px; letter-spacing: 2px; color: #999; padding: 15px 20px; border-bottom: 1px solid #eee; background: #fff; }
+    .viewer-label { font-size: 10px; letter-spacing: 2px; color: #999; padding: 12px 15px; border-bottom: 1px solid #eee; background: #fff; }
     .viewer-content { aspect-ratio: 1; }
     .viewer-content img { width: 100%; height: 100%; object-fit: contain; background: #f5f5f5; }
     .viewer-content model-viewer { width: 100%; height: 100%; }
-    .modal-description { margin-top: 40px; font-size: 13px; line-height: 1.8; color: #666; max-width: 600px; }
+    
+    .modal-description { margin-top: 40px; font-size: 13px; line-height: 1.8; color: #666; max-width: 800px; }
+    .modal-description a { color: #000; }
 
     /* About Section */
     .about { background: #fff; padding: 100px 40px; }
@@ -95,6 +97,7 @@
     .about-block p { font-size: 14px; line-height: 2; color: #333; margin-bottom: 15px; }
     .about-block p:last-of-type { margin-bottom: 0; }
     .about-block p.en { color: #888; font-size: 13px; }
+    .about-block p.en a { color: #000; }
 
     .rule-flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-top: 40px; }
     .rule-step { background: #f9f9f9; padding: 25px; text-align: center; border: 1px solid #eee; }
@@ -133,6 +136,9 @@
     footer a:hover { opacity: 1; }
     footer p { font-size: 10px; color: #999; margin-top: 15px; }
 
+    @media (max-width: 1024px) {
+      .modal-viewers { grid-template-columns: repeat(3, 1fr); gap: 15px; }
+    }
     @media (max-width: 768px) {
       header { padding: 15px 20px; }
       nav { display: none; position: absolute; top: 100%; left: 0; right: 0; background: #fff; flex-direction: column; padding: 20px; border-bottom: 1px solid #eee; }
@@ -185,7 +191,7 @@
         <div class="about-block">
           <h2>CONCEPT</h2>
           <p>どことなく青凪を想起させる黒いオブジェクトは、60年代のミニマリズムを参照。すべての作品は、瀬戸内リトリート青凪のスタッフが日々目にしているお気に入りのシーンを切り取った写真をもとに制作されました。</p>
-          <p class="en">AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day.</p>
+          <p class="en">AONAGI 1st is the first digital collectibles of Setouchi Retreat Aonagi. The black objects, like the landscape of Aonagi, reference the minimalism of the 1960s. All of these were created based on favorite scenes that the staff sees every day. AONAGI 1st holders will receive access to upcoming events. OFFICIAL WEBSITE : <a href="https://aonagi1st.art" target="_blank">https://aonagi1st.art</a></p>
         </div>
 
         <div class="about-block">
@@ -286,8 +292,18 @@
         <div class="modal-attrs" id="modal-attrs"></div>
       </div>
       <div class="modal-viewers">
-        <div class="viewer-box"><div class="viewer-label">IMAGE</div><div class="viewer-content"><img id="modal-image" src="" alt=""></div></div>
-        <div class="viewer-box"><div class="viewer-label">3D MODEL</div><div class="viewer-content"><model-viewer id="modal-model" camera-controls auto-rotate shadow-intensity="1" exposure="0.8"></model-viewer></div></div>
+        <div class="viewer-box">
+          <div class="viewer-label">WEBP</div>
+          <div class="viewer-content"><img id="modal-webp" src="" alt=""></div>
+        </div>
+        <div class="viewer-box">
+          <div class="viewer-label">PNG</div>
+          <div class="viewer-content"><img id="modal-png" src="" alt=""></div>
+        </div>
+        <div class="viewer-box">
+          <div class="viewer-label">GLB</div>
+          <div class="viewer-content"><model-viewer id="modal-glb" camera-controls auto-rotate shadow-intensity="1" exposure="0.8"></model-viewer></div>
+        </div>
       </div>
       <p class="modal-description" id="modal-desc"></p>
     </div>
@@ -381,11 +397,26 @@
       const floor = a.attributes.find(x => x.trait_type === 'FLOOR')?.value || '-';
       const area = a.attributes.find(x => x.trait_type === 'AREA')?.value || '-';
       const point = a.attributes.find(x => x.trait_type === 'POINT')?.value || '-';
+      
+      // Get the number from animation_url (e.g., "1.glb" -> "1")
+      const num = a.animation_url.replace('.glb', '');
+      
       document.getElementById('modal-name').textContent = a.name;
-      document.getElementById('modal-attrs').innerHTML = `<div class="modal-attr">FLOOR<span>${floor}</span></div><div class="modal-attr">AREA<span>${area}</span></div><div class="modal-attr">POINT<span>${point}</span></div>`;
-      document.getElementById('modal-image').src = `images/${a.image}`;
-      document.getElementById('modal-model').src = `models/${a.animation_url}`;
-      document.getElementById('modal-desc').textContent = a.description.replace(/\[([^\]]+)\]\([^)]+\)/g, '$1').replace(/\\n/g, ' ');
+      document.getElementById('modal-attrs').innerHTML = `
+        <div class="modal-attr">FLOOR<span>${floor}</span></div>
+        <div class="modal-attr">AREA<span>${area}</span></div>
+        <div class="modal-attr">POINT<span>${point}</span></div>
+      `;
+      
+      // Set the three file types
+      document.getElementById('modal-webp').src = `images/${num}.webp`;
+      document.getElementById('modal-png').src = `images/${a.image}`;
+      document.getElementById('modal-glb').src = `models/${a.animation_url}`;
+      
+      // Format description with link
+      let desc = a.description.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank">$1</a>').replace(/\\n/g, '<br>');
+      document.getElementById('modal-desc').innerHTML = desc;
+      
       document.getElementById('modal').classList.add('active');
       document.body.style.overflow = 'hidden';
     }
@@ -393,7 +424,7 @@
     function closeModal() {
       document.getElementById('modal').classList.remove('active');
       document.body.style.overflow = '';
-      document.getElementById('modal-model').src = '';
+      document.getElementById('modal-glb').src = '';
     }
 
     document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
